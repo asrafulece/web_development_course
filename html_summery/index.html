@@ -16,6 +16,24 @@
             }
         </style>
 
+
+        <style>
+            table {
+                width: 300px;
+                height: 200px;
+                border: 2px solid black;
+                border-collapse: collapse;
+                }
+            th, td {
+                     border: 1px solid black;
+                    }
+
+                tr {
+                    text-align: center;
+                }
+
+        </style>
+
         <link rel="stylesheet" href="style.css" >
         <script src="index.js"></script>
 
@@ -24,22 +42,36 @@
    </head>
 
         <body>
-
-                <img src="download.jpeg" alt="no image found" width="200" height="200" style="border-radius: 50%;"> <br>
-                <a href="https://www.facebook.com/engr.asraful.islam.303398" target="_blank" style="display:block; text-align:left;">Facebook Profile</a>
-
-                <a href="/home/arif/Projects/html/web_development_course/accessibility_testing/index.html" target="_blank" style="display:block; text-align:left;">Pls visit to the Accessibility Testing Page</a>
-
-                <a href="https://www.youtube.com/watch?v=zsYMgmb2oCM&list=PLgH5QX0i9K3oHBr5dsumGwjUxByN5Lnw3&index=45&t=1325s" target="_blank" style="display:block; text-align:left;">YouTube Video</a>
-
+           
+                </ol>
+                <div id="Profile name" style="background-color: rgb(221, 169, 139); text-align: left; color: red; font-size: 22px;"><strong>Welcome to My Personal Webpage</strong></div>
                 
-                <h1 style="margin:0.4rem 0;text-align: left;color: red;">Welcome to My Personal Webpage</h1>
                 <hr style="margin:0.4rem 0;text-align: left;color: red;">    
-                <h2 style="margin:0.2rem;text-align: left;color: red;">My name is Engr. Md Asraful Islam</h2>
-                <h2 style="margin:0.2rem ;text-align: left;color: red;">I am 40 years old</h2>
-                <h2 style="margin:0.2rem ;text-align: left;color: blue">I am student of Khulna University.</h2>
+
+                <div id="introduction" style="background-color: green; height: 100px; width: 100%;">
+
+                <h2 style="margin:0.2rem;text-align: left;color:black;">My name is Engr. Md Asraful Islam</h2>
+                <h2 style="margin:0.2rem ;text-align: left;color:black;">I am 40 years old</h2>
+                <h2 style="margin:0.2rem ;text-align: left;color: black">I am student of Khulna University.</h2>
+
+                </div>
+
+                <div id="additional_info" style="background-color: blue ; height: auto; width: 100%; padding: 0.4rem; margin-top:0.4rem;">
 
                 <ol>
+
+                <ol style="text-align:left; margin:0.4rem; padding-left:1.2rem; list-style-position:outside;"></ol>
+                    <br>
+                    <li><img src="download.jpeg" alt="Natural scenario" title="download.jpeg" width="200" height="200" style="border-radius:50%; display:block; margin:0;"></li> <br>
+                    <li><a href="https://www.linkedin.com/in/engr-asraful-islam-950b5882/" target="_blank">Linkedin Profile</a></li>
+                    <li><a href="https://www.facebook.com/engr.asraful.islam.303398" target="_blank">Facebook Profile</a></li>
+                    <li><a href="/home/arif/Projects/html/web_development_course/accessibility_testing/index.html" target="_blank">Pls visit to the Accessibility Testing Page</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=zsYMgmb2oCM&list=PLgH5QX0i9K3oHBr5dsumGwjUxByN5Lnw3&index=45&t=1325s" target="_blank">YouTube Video</a></li>
+                </ol>
+                <br>
+
+
+                <ol type="A">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
@@ -69,6 +101,49 @@
 
                 &lt;body&gt; <br>
                 &copy; Engr. Asraful Islam</b>
+                </div> <br><br>
+
+                <div id="table_section" style="background-color: orange; padding:0.4rem;">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>GPA</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                                <tr>
+                                <td>101</td>
+                                <td>Asraful Islam</td>
+                                <td>3.75</td>
+                                </tr>
+
+                                <tr>
+                                <td>102</td>
+                                <td>Arifur Rahman</td>
+                                <td>3.80</td>
+                                </tr>       
+
+                                <tr>
+                                <td>103</td>
+                                <td>Ariful Islam</td>
+                                <td>3.75</td>
+                                </tr>   
+                        </tbody>
+
+
+                    </table>
+                    
+
+
+
+                </div>
+
+
                          
         </body>
 
