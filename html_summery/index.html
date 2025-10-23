@@ -18,14 +18,36 @@
 
 
         <style>
-            table {
+            table section1{
                 width: 300px;
                 height: 200px;
                 border: 2px solid black;
-                border-collapse: collapse;
+                /*border-collapse: collapse;*/
+               border-spacing: 10px;
+                
                 }
             th, td {
-                     border: 1px solid black;
+                     border: 2px solid black;
+                      padding: 10px;
+                    }
+
+                tr {
+                    text-align: center;
+                }
+        </style>
+
+        <style>
+            table section2 {
+                width: 300px;
+                height: 200px;
+                border: 2px solid black;
+                /*border-collapse: collapse;*/
+               border-spacing: 10px;
+                
+                }
+            th, td {
+                     border: 2px solid black;
+                      padding: 10px;
                     }
 
                 tr {
@@ -33,6 +55,8 @@
                 }
 
         </style>
+
+
 
         <link rel="stylesheet" href="style.css" >
         <script src="index.js"></script>
@@ -103,7 +127,7 @@
                 &copy; Engr. Asraful Islam</b>
                 </div> <br><br>
 
-                <div id="table_section" style="background-color: orange; padding:0.4rem;">
+                <div id="table_section1" style="background-color: orange; padding:0.4rem;">
 
                     <table>
 
@@ -135,9 +159,142 @@
                                 </tr>   
                         </tbody>
 
+                    </table>
+                </div>
+
+                <div id="table sectioin2">
+
+                    <table>
+
+                        <thead>
+                            <th>
+                                    <tr>
+                                        <th id="student_id">ID</th>
+                                        <th>name</th>
+                                        <th colspan="2">number</th>
+
+                                    </tr>
+                            </th>
+            
+                        </thead>
+
+                        <tbody>
+                                    <tr>
+                                    <td>101</td>
+                                    <td>Asraful Islam</td>
+                                    <td>017</td>
+                                    <td rowspan="3">018</td>
+                                
+                                    </tr>
+
+                                    <tr>
+                                    <td>102</td>
+                                    <td>Arifur Rahman</td>
+                                    <td>017</td>
+                        
+                                    </tr>       
+
+                                    <tr>
+                                    <td >103</td>
+                                    <td>Ariful Islam</td>
+                                    <td>012</td>
+                                    </tr>
+                        </tbody>
 
                     </table>
+
+
+                </div>
+
+
+
+                <div>
+
+                    <h2>registeration form</h2>
+
+                    <form>
+
+                        <div>
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required> <br>
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required> <br>
+                        </div>
+
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required> <br>
+                        </div>
+
                     
+                        <div>
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required> <br>
+                        </div>
+
+                        <div>
+                            <label for="photo">Upload Photo</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" required> <br>
+                        </div>
+
+                          <div>
+                            <label for="gender">Gender</label> <br>
+                            <input type="radio" id="gender_male" name="gender" value="male" required>
+                            <input type="radio" id="gender_female" name="gender" value="female" required>
+                        </div>
+
+                        <div>
+                            <label for="religion">Religion</label>
+                            <select id="religion" name="religion" required>
+                                <option value="islam">Islam</option>
+                                <option value="hinduism">Hinduism</option>
+                                <option value="christianity">Christianity</option>
+                                <option value="buddhism">Buddhism</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+
+                          <div>
+                            <label for="department">Department</label>
+                            <select id="department" name="department" required>
+                                <option value="cse">Computer Science</option>
+                                <option value="eee">Electrical Engineering</option>
+                                <option value="bba">Business Administration</option>
+                                <option value="law">Law</option>
+                                <option value="other">Other</option>
+                            </select>
+                        
+                        </div>
+            
+                        <div>
+                            <label for="message">Message</label> <br>
+                            <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+                        </div>
+
+                        submit
+
+                        <div>
+                            <button type="submit">Register</button>
+                        </div>
+
+
+                    </form>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
